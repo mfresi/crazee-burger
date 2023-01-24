@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 export default function LoginForm() {
   // Déclarations du state
   const [user, setUser] = useState("")
+  const navigate = useNavigate()
 
   // Comportements
   const handleChange = (event) => {
@@ -11,8 +13,8 @@ export default function LoginForm() {
 
   const handleSubmit = (event) => {
       event.preventDefault()
-      alert("Bonjour " + user)
       setUser("")
+      navigate("order/" + user)
   }
 
   // Affichage
