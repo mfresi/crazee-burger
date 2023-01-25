@@ -4,10 +4,16 @@ import styled from "styled-components"
 export default function NavBar( { username } ) {
     return (
     <NavBarStyled>
-          <h1>Bienvenue {username} !</h1>
-          <Link to="/">
-              <button>Déconnexion</button>
-          </Link>
+        <div className="left-side">
+            left
+        </div>
+        <div className="right-side">
+            right
+            <h1>Bienvenue {username} !</h1>
+            <Link to="/">
+                <button>Déconnexion</button>
+            </Link>
+        </div>
     </NavBarStyled>
   )
 }
@@ -15,4 +21,14 @@ export default function NavBar( { username } ) {
 const NavBarStyled = styled.nav`
     height: 10vh;
     background: blue;
+    display: flex;
+    justify-content: space-between;
+
+    .left-side {
+        background: pink;
+    }
+
+    .right-side {
+        background: purple;
+    }
 `
