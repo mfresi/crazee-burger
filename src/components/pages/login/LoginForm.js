@@ -85,6 +85,7 @@ const LoginFormStyled = styled.form`
 
   input {
     border: none;
+    outline: none;
     font-size: 15px;
     color: #17161a;
     width: 100%;
