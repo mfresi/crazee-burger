@@ -1,12 +1,16 @@
 import styled from "styled-components"
 import Main from "./Main"
 import NavBar from "./NavBar"
+import { useParams } from "react-router-dom"
 
 export default function OrderPage() {
+
+  const { user } = useParams()
+
   return (
     <OrderPageStyled>
       <div className="container">
-        <NavBar />
+        <NavBar username={user} />
         <Main />
       </div>
     </OrderPageStyled>

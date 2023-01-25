@@ -1,13 +1,10 @@
-import { Link, useParams } from "react-router-dom"
+import { Link } from "react-router-dom"
 import styled from "styled-components"
 
-export default function NavBar() {
-    
-    const {user} = useParams()
-    
+export default function NavBar( { username } ) {
     return (
     <NavBarStyled>
-          <h1>Bienvenue {user} !</h1>
+          <h1>Bienvenue {username} !</h1>
           <Link to="/">
               <button>Déconnexion</button>
           </Link>
