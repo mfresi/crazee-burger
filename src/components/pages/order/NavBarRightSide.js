@@ -5,7 +5,7 @@ export default function NavBarRightSide({username}) {
   return (
     <NavBarRightSideStylde>
       {/* <div className="admin-button">Admin button</div> */}
-      <Profile />
+      <Profile username={username}/>
     </NavBarRightSideStylde>
   )
 }
