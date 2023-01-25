@@ -21,7 +21,6 @@ const LoginPageStyled = styled.div`
         background: url("/images/burger-and-fries-background.jpg");
         background-size: cover;
         background-position: center;
-        background-blend-mode: darken;
         
         position: absolute;
         top: 0;
